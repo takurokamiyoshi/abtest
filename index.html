@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>sample</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+<div id="contnet">
+    <div id="test1a" style="display: none;"><a href="#">あなたにおすす
+め！！</a></div>
+    <div id="test1b" style="display: none;"><a href="#">みんなに人気！！
+</a></div>
+</div>
+<script src="js/abtest.js"></script>
+<script>
+(function(){
+    // html表示・非表示ABテスト
+    var test1 = new abTest('test1', ['test1a','test1b']);
+    test1.htmlTest();
+
+    // リダイレクトABテスト
+    var test2 = new abTest('test2', ['http://www.takurokamiyoshi.net/','http://www.takurokamiyoshi.net/blog/']);
+    test2.redirectTest();
+})();
+</script>
+</body>
+</html>
