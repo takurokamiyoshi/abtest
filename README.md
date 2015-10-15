@@ -6,8 +6,10 @@ Cookie（セッション）で出し分けできるABテストJavaScriptライ�
 ##導入方法
 ###html表示・非表示ABテスト
 ・各パターンの要素を表示状態で記述します。
+
 	<div id="test1a" style="display: none;"><a href="#">あなたにおすすめ！！</a></div>
 	<div id="test1b" style="display: none;"><a href="#">みんなに人気！！</a></div>
+
 ・閉じbody直前でabtest.jsと下記jsを読み込みます。
 
 	(function(){
