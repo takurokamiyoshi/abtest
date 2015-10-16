@@ -1,5 +1,5 @@
 #abtest.js
-Cookie（セッション）で出し分けできるABテストJavaScriptライブラリです。
+Cookie（セッション）で出し分けできるABテストJavaScriptライブラリです。  
 ・html表示・非表示ABテスト  
 ・リダイレクトABテスト  
 ができます。
